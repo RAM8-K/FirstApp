@@ -1,14 +1,18 @@
-﻿using System.Net.WebSockets;
+﻿using System;
 
-namespace ConsoleApp1
+class MainClass
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            string MyName;
-            MyName = "Sasha";
-            Console.WriteLine(MyName);
-        }
+        SemaPhore Favorite_Colour;
+        Favorite_Colour = SemaPhore.green;
+        Console.WriteLine(Favorite_Colour);
     }
+}
+
+enum SemaPhore
+{ 
+    red = 100,
+    yellow = 200,
+    green = 300
 }
