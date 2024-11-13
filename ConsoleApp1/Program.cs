@@ -1,14 +1,30 @@
-﻿using System.Net.WebSockets;
+﻿using System;
+using System.Net.WebSockets;
 
-namespace ConsoleApp1
+class MainClass
 {
-    internal class Program
+    public static void Main (string[] args)
     {
-        static void Main(string[] args)
-        {
-            string MyName;
-            MyName = "Sasha";
-            Console.WriteLine(MyName);
-        }
+        string name = "Ram";
+        byte age = 18;
+        bool pet = true;
+        double foot = 45;
+
+        Console.WriteLine("Меня зовут {0}", name);
+        Console.WriteLine("Мне {0}", age);
+        Console.WriteLine("У меня {0}", pet);
+        Console.WriteLine("У меня {0} размер ноги", foot);
+
+
+
+
+
+
+
     }
+
+
+
+
+
 }
